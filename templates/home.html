@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <title>Home</title>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
+            }
+            to {
+                text-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493, 0 0 50px #ff1493, 0 0 60px #ff1493, 0 0 70px #ff1493, 0 0 80px #ff1493;
+            }
+        }
+    </style>
 </head>
 <body>
-        <h1>My Website Text</h1>
-        <table border="1">
-                <tr>
-                        <td>Text Text Text</td>
-                        <td>Text Text Text</td>
-                        <td>Text Text Text</td>
-                </tr>
-                <tr>
-                        <td>Text Text Text</td>
-                        <td>Text Text Text</td>
-                        <td>Text Text Text</td>
-                </tr>
-                <tr>
-                        <td>Text Text Text</td>
-                        <td>Text Text Text</td>
-                        <td>Text Text Text</td>
-                </tr>
-        </table>
+    <h1>Ruby is so beautiful</h1>
 </body>
 </html>
