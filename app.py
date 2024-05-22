@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Ruby is beatiful"
+    return render_template('home.html')
 
 @app.route('/test/<name>')
 def test(name):
@@ -16,7 +16,8 @@ def form():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    name = request.form['name']
+    name = request.form.get('name', 'No Name Provided')
+    print(f'Received name: {name}')
     return f'Hello, {name}!'
 
 if __name__ == "__main__":
