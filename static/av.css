@@ -18,6 +18,7 @@ header {
 
 main {
     display: flex;
+    flex-direction: row;
     padding: 1rem;
     width: 100%;
     box-sizing: border-box;
@@ -105,4 +106,34 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #video-list {
+        margin-right: 0;
+    }
+
+    #donate-section {
+        margin-top: 2rem;
+    }
+
+    #videos iframe {
+        height: 200px; /* 減小 iframe 的高度以適應手機屏幕 */
+    }
+}
+
+@media (max-width: 480px) {
+    #video-url, #video-type, button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    #videos iframe {
+        height: 150px; /* 再次減小 iframe 的高度以適應更小的屏幕 */
+    }
 }

@@ -6,7 +6,6 @@
     <title>Danny Lei 的夢幻天堂</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='av.css') }}">
     <script src="{{ url_for('static', filename='av.js') }}"></script>
-</head>
 <body>
     <header>
         <h1>Danny Lei 的夢幻天堂</h1>
@@ -16,6 +15,7 @@
             <h2>添加影片</h2>
             <input type="text" id="video-url" placeholder="輸入影片連結">
             <select id="video-type">
+                <option value="youtube">YouTube</option>
                 
                 <!-- 可以添加更多選項 -->
             </select>
