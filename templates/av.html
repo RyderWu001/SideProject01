@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Lei 的夢幻天堂</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='av.css') }}">
+    <script src="{{ url_for('static', filename='av.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Danny Lei 的夢幻天堂</h1>
+    </header>
+    <main>
+        <section id="add-video">
+            <h2>添加影片</h2>
+            <input type="text" id="video-url" placeholder="輸入影片連結">
+            <select id="video-type">
+                
+                <!-- 可以添加更多選項 -->
+            </select>
+            <button id="add-button">添加</button>
+        </section>
+        <section id="video-list">
+            <h2>喜愛的影片</h2>
+            <div id="videos"></div>
+        </section>
+        <aside id="donate-section">
+            <h2>支持我們</h2>
+            <p>如果你喜歡我們的網站，可以考慮捐款支持我們的運營。</p>
+            <button id="donate-button">捐款</button>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 built by 來. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
